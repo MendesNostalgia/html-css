@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como surgiu o mascote do Android?</title>
+    <style>
+        @font-face {
+            font-family: 'nova';
+            src: url('fontes/idroid.otf') format('opentype');
+        }
+
+        @font-face {
+            font-family: 'new';
+            src: url('fontes/game1.ttf') format('truetype');
+        }
+
+        body{
+            text-align: justify;
+        }
+
+        header{
+            background-image: linear-gradient(to bottom, #1500ff, #f22727, #1500ff);
+            min-height: 150px;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        header > h1{
+            color: white;
+            font-family:'new';
+            font-size: 3em;
+            font-weight: normal;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 0px black / 27%;
+        }
+
+        header > p{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.2em;
+            color: white;
+            max-width: 600px;
+            padding-right: 10px;
+            padding-left: 10px;
+            margin: auto;
+            padding-bottom: 50px;
+            text-shadow: 2px 2px 0px rgb(0 0 0 / 32%);
+        }
+
+        nav{
+            background-color: #1500ff;
+            padding: 10px;
+            box-shadow: 0px 7px 7px rgb(0 0 0 / 19%);
+        }
+
+        nav > a{
+            color: #000000e1;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition-duration: .5s;
+        }
+
+        article > h1, h2{
+            font-family: 'nova';
+            color: #003cff;
+        }
+
+        h1#principal{
+            font-size: 1.8em;
+        }
+
+        main{
+            min-width: 300px;
+            max-width: 1000px;
+            margin: auto;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px black / 42%;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        tfoot > p{
+            text-align: center;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CURIOSIDADES DE TECNOLOGIA</h1>
+        <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Notícias</a>
+        <a href="#">Curiosidades</a>
+        <a href="#">Fale Conosco</a>
+    </nav>
+    <main>
+        <article>
+            <h1 id="principal">História do Mascote do Android</h1>
+            <p>Provavelmente você sabe que o sistema operacional <strong>Android</strong>, mantido pelo <strong>Google</strong> é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.</p>
+            <h2>A primeira versão</h2>
+            <p>A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado <a href="https://androidcommunity.com/dan-morrill-shows-us-the-android-mascot-that-almost-was-20130103/">Dan Morrill</a>. Ele conta que abriu o <a href="https://inkscape.org/pt-br/">Inkscape</a> (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.</p>
+            <picture>
+                <source media="(max-width: 670px)" srcset="imagens/dan-droids-pq.png"><img src="imagens/dan-droids.png" alt="android">
+            </picture>
+            <p>Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os Dandroids.</p>
+            <h2>Surge um novo mascote</h2>
+            <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa <a href="https://www.irinablok.com/android">Irina Blok</a>, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
+            <picture>
+                <source media="(max-width: 670px)" srcset="imagens/irina-blok-pq.jpg">
+                <img src="imagens/irina-blok.jpg" alt="Irina Blok, criou o Bugdroid">
+            </picture>
+            <p>A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o <strong style="color: #1a5c37">Bugdroid</strong>, o novo mascote do Android.</p>
+        </article>
+    </main>
+        <tfoot>
+            <p>Site criado por <strong><a href="https://github.com/MendesNostalgia">Jefferson Mendes</a></strong> para o <a href="https://www.youtube.com/cursoemvideo"><strong>CursoemVídeo</strong></a></p>
+        </tfoot>
+
+</body>
+</html>

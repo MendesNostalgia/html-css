@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, (px), pt, pc
+
+            Medidas Relativas
+            (em), ex, rem, vw, vh, %
+
+            16px geralmente = 1em
+
+            font-weight: peso
+            font-width: largura
+            font-height: altura
+            */
+
+            font-size: 16px;
+            font-weight: 500;
+            font-style: italic;
+            /* Variação de peso
+            lighter: mais leve
+            normal: não muda a fonte
+            bold: negrito
+            bolder: extre negrito
+            */
+        }
+        h1{
+            /* shorthand font (ordem a ser seguida para formato de texto)
+            -font-style -> font-weight -> font-size -> font-family
+            
+            font-family: 'Work Sans', sans-serif;
+            font-weght: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            font: italic bolder 3em 'Times New Roman', Times, serif;
+        }
+
+        h2{
+            font: bold 2em 'Arial';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque libero repellat, in, numquam ducimus consequuntur optio consectetur earum mollitia neque, commodi dolore facilis. Corrupti quisquam nam in illo accusantium veniam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum impedit officiis, voluptatum itaque enim exercitationem placeat repellat porro mollitia recusandae quis dignissimos consectetur praesentium laudantium! Eos voluptatum culpa accusamus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis reiciendis officia nulla temporibus voluptatum quod, odio facere tenetur nemo ullam molestiae vitae deserunt repellat rerum quae voluptate laborum magnam nisi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim iure sapiente nostrum saepe voluptates facilis dolore possimus inventore recusandae, error, reiciendis temporibus assumenda tenetur labore quaerat natus laudantium? Perspiciatis, blanditiis!</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ullam corrupti asperiores, ratione omnis, vitae reprehenderit similique doloremque natus autem sed inventore? Pariatur cumque ipsam corrupti totam illum vel doloremque?</p>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* 
+        Pseudo-classes=Uma pseudo-classe CSS é uma palavra-chave adicionada às declarações de um seletor após um sinal de dois pontos e especificam um estado especial de um elemento. Existem várias pseudo-classes para estilos, podemos citar :hover, :visited, :active, :checked, :empty e :focus.
+
+        Já um pseudo-elemento CSS é uma palavra-chave adicionada às declarações de um seletor após dois sinais de dois pontos e permitem que você formate um pedaço específico do elemento referenciado. Os principais pseudo-elementos usados nas CSS
+        são ::before, ::after, ::first-letter, ::first-line.
+        */
+
+        /*  SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children
+        */
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        a:visited{
+            color: darkorange;
+        }
+
+        a:hover{
+            color: chartreuse;
+            text-decoration: underline overline;
+        }
+
+        a:active{
+            color: black;
+        }
+
+        .especial{
+            background-color: rgba(238, 130, 238, 0.267);
+        }
+
+
+        .especial::after{
+            content: ' ☜';
+        }
+
+        .especial::before{
+            content: '☞ ';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+        <ul>
+            <li><a href="https://gustavoguanabara.github.io" class="especial">Repositório GitHub</a></li>
+            <li><a href="https://youtube.com/cursoemvideo/" class="especial">Canal do YouTube</a></li>
+            <li><a href="https://cursoemvideo.com" class="especial">Site do Curso em Vídeo</a></li>
+        </ul>
+</body>
+</html>

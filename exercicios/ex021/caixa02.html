@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgba(0, 0, 0, 0.214);
+            margin: 0px;
+        }
+        header{
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 0px 35px 0px 35px;
+        }
+
+        nav{
+            background-color: rgba(0, 0, 0, 0.758);
+            padding: 4px;
+            box-shadow: 2px 2px 7px 3px black;
+        }
+
+        h1{
+            box-shadow: 2px 2px 7px 3px black;
+            width: 500px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: overline underline;
+        }
+        
+        main{
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 35px 0px 35px 0px;;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 2px;
+            margin: 0px;
+        }
+
+        article > aside{
+            background-color: rgb(0, 66, 123);
+            color: white;
+            width: 400px ;
+            text-align: center;
+        }
+        
+        article{
+            background-color: lightblue;
+            padding: 5px;
+            border-radius: 35px 0px 35px 0px;;
+        }
+
+        section{
+            background-color: rgb(0, 0, 0);
+            padding: 7px;
+            border-radius: 5px;
+        }
+        section > p{
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+        }
+
+        div#bola{
+            height: 200px;
+            width: 200px;
+            margin: 20px;
+            background-color: beige;
+            border-radius: 50%;
+        }
+
+        div#bola:hover{
+           display: block;
+           background-color: black;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p style="border-radius: 10px;">Tecnologia Educação Saúde Mais</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quas temporibus perferendis ratione numquam vel dolore facere, sed eligendi neque aliquam architecto hic eum asperiores adipisci iure! Aperiam, eos eveniet?</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvida pela Curso em Vídeo</p>
+    </footer>
+    <div id="bola"></div>
+    <!-- <div> (Assim era o corpo do texto)
+        <div id="cabecalho">
+            <h1>
+
+            </h1>
+            <div id="menu">
+
+            </div>
+        </div>
+        <div dir="conteudo">
+
+        </div>
+        <div id="rodape">
+
+        </div>
+    </div> --> 
+</body>
+</html>

@@ -1,0 +1,38 @@
+ANINHAMENTO
+
+Caixa dentro de outra caixa: "Anatomia"
+
+- height: altura
+- width: largura
+- border: borda
+- padding: preenchimento ou acochoamento (interno)
+- margin: margem (externo)
+- outline: contorno ou traçado (fora do elemento)
+
+Tipos de Caixas:
+
+- box-level - exemplos de tags: quebra de texto, pula para proxima linha
+<div>
+<h1-<h6>
+<p>
+<main>
+<header>
+<nav>
+<article>
+<aside>
+<footer>
+<form>
+<video>
+
+- inline-level - exemplos de tags: não quebra texto, permanece na mesmo linha
+<span>
+<a>
+<code>
+<small>
+<strong>
+<em>
+<supe>-<sub>
+<label>
+<button>
+<input>
+<select>

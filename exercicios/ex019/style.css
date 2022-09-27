@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/*
+    Tudo em HTML é 'id' = em CSS é '#'; (só pode um elemento por página)
+    Tudo em HTML é 'class' = em CSS é '.'; (pode vários elementos na página)
+*/
+
+body{
+    background-image: radial-gradient( #026873, #5b7302);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    color: #360259;
+}
+
+h1#principal{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: #025940;
+}
+
+.basico{
+    color: #025916;
+}
+.intermediario{
+    color: #130259;
+}
+.avancado{
+    color: #590202;
+}
