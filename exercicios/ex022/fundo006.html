@@ -8,13 +8,21 @@
     <style>
         body{
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
             background-size: cover;
 
-            background-attachment: fixed;
+            background-attachment: fixed; /* Vinculo: imagem fixa ou não */
+
+            /* Shorthand - background 
+                color > image > position > repeat > [size] > attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+
         }
         main{
             background-color: white;
@@ -31,7 +39,7 @@
     </style>
 </head>
 <body>
-    <main>
+    <main> <!-- Vinculo: background-attachment: -->
         <h1>Teste de imagem de fundo</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam repudiandae iste, illum, dolores delectus mollitia voluptas maxime sed aliquid atque, unde sint praesentium. Incidunt beatae dignissimos dolores eum porro officia! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea voluptate molestiae aut sint, quidem soluta veritatis eum laudantium. Iusto, numquam possimus ullam adipisci beatae soluta cumque corporis laborum consectetur dolores? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis modi nisi, consequatur esse dolores repellat dolor rerum tempora nam accusamus optio porro aliquam ex, repellendus, eum aliquid temporibus ullam iure!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam repudiandae iste, illum, dolores delectus mollitia voluptas maxime sed aliquid atque, unde sint praesentium. Incidunt beatae dignissimos dolores eum porro officia! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea voluptate molestiae aut sint, quidem soluta veritatis eum laudantium. Iusto, numquam possimus ullam adipisci beatae soluta cumque corporis laborum consectetur dolores? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis modi nisi, consequatur esse dolores repellat dolor rerum tempora nam accusamus optio porro aliquam ex, repellendus, eum aliquid temporibus ullam iure!</p>
