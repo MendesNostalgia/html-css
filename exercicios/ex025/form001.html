@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off"> 
+        <!-- action="cadastro.php": ação para arquivo php -->
+        <!-- autocomplete="off": desliga o autopreenher -->
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenone">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenone"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+            <!-- input: objeto de entrada tenha a tag (name) -->
+            <!-- tag name: é mais útil para HTML e PHP -->
+            <!-- tag id: é mais utilizado no JS e Label -->
+            <!-- Na barra de endereços: "?" divide do que é a URL dos paramentros que foram enviados depois da submissão-->
+
+            <!-- GET: padrão (mostra dados na URL ) - só pode enviar até 3mil bytes, mais ou menos 3 mil letras / conteudo sensivel não é ideal (senhas, fotos, numero de cartão, etc) -->
+
+            <!-- POST: esconde dados input na URL, mas não esconde no DevTools Google / pode ser enviados dados sensiveis o oposto de GET -->
+</body>
+</html>
