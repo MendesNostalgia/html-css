@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com telefone e e-mail</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <!-- Adiciona um campo de e-mail -->
+        <p>
+            <label for="iemail">E-mail</label>
+            <!-- Adiciona um campo de e-mail -->
+            <input type="email" name="email" id="iemail" autocomplete="email" required>
+            <!-- Adiciona um campo de e-mail -->
+        </p>
+            <label for="itelefone">Telefone</label>
+            <!-- Adiciona um campo de telefone -->
+            <input type="tel" name="telefone" id="itelefone" autocomplete="tel" required>
+            <!-- Adiciona um campo de telefone -->
+            <input type="hidden" name="origem" value="form004.html"> <!-- Armazena a origem do formulário -->
+            <!-- Adiciona um campo oculto para armazenar a origem do formulário -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <!-- Adiciona um botão de envio -->
+            <input type="reset" value="Limpar">
+            <!-- Adiciona um botão de limpeza -->
+        </p>
+        
+    </form>
+    
+</body>
+</html>
