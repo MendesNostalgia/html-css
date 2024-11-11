@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <!-- Adiciona um campo de e-mail -->
         <p>
             <label for="iemail">E-mail</label>
@@ -18,17 +18,19 @@
             <label for="itelefone">Telefone</label>
             <!-- Adiciona um campo de telefone -->
             <input type="tel" name="telefone" id="itelefone" autocomplete="tel" required>
+            <!-- ESTUDAR SOBRE RegEx -->
             <!-- Adiciona um campo de telefone -->
-            <input type="hidden" name="origem" value="form004.html"> <!-- Armazena a origem do formulário -->
-            <!-- Adiciona um campo oculto para armazenar a origem do formulário -->
+        </p>
+        <p>
+            <label for="ipassword">Senha</label>
+            <input type="password" nome="password" id="ipassword" autocomplete="current-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Deve conter pelo menos um número e uma letra maiúscula e minúscula e pelo menos 8 ou mais caracteres">
         </p>
         <p>
             <input type="submit" value="Enviar">
             <!-- Adiciona um botão de envio -->
             <input type="reset" value="Limpar">
             <!-- Adiciona um botão de limpeza -->
-        </p>
-        
+        </p>        
     </form>
     
 </body>
