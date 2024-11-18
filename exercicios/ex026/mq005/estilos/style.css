@@ -11,6 +11,10 @@ body, html {
     color: white;
 }
 
+body > img {
+    max-width: 50%;
+}
+
 header {
     background-color: gray;
 }
@@ -18,7 +22,6 @@ header {
 header > h1 {
     padding: 10px;
     text-align: center;
-
 }
 
 menu {
