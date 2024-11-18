@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset "UTF-8";
 
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -29,9 +29,9 @@ span#burger {
     color: black;
     display: block;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     cursor: pointer;
-
+    transition: 2s;
 }
 
 span#burger:hover {
@@ -45,6 +45,9 @@ menu {
 
 menu > ul {
     list-style-type: none;
+    margin-top: 10px;
+    padding: 0px 40px 0px 40px;
+    background-color: #f0f8ff;
 }
 
 menu a {
@@ -54,11 +57,12 @@ menu a {
     text-align: center;
     background-color: rgb(8, 35, 60);
     color: #f0f8ff;
-    border-top: 2px solid gray;
+    border: 2px solid gray;
 }
 
 menu a:hover {
     background-color: rgb(6, 23, 43);
+    color: #f0f8ff;
 }
 
 main {
@@ -80,10 +84,18 @@ article > h2 {
     padding-bottom: 20px;
     text-transform: uppercase;
     padding-left: 30px;
+    font-size: 1.5em;
+    color: #f0f8ff;
+    background-color: rgb(8, 35, 60);
+    border-top: 2px solid gray;
+    font-weight: bold;
 }
 
 article > p {
     text-align: justify;
-    margin-bottom: 20px;
+    margin: 0px 30px 20px 30px;
     text-indent: 20px;
+    line-height: 1.5;
+    font-weight: normal;
+    color: #f0f8ff;
 }
