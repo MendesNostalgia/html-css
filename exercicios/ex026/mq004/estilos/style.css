@@ -36,13 +36,17 @@ h1 {
     text-shadow: 2px 2px 2px black;
 }
 
+p {
+    text-align: center;
+}
+
 img {
     display: block;
     margin: auto;
 }
 
-img#phone{ display: block;}
-img#tablet{ display: none;}
-img#print{ display: none;}
-img#pc{ display: none;}
-img#tv{ display: none;}
+img#phone { display: block;}
+img#tablet { display: none;}
+img#print { display: none;}
+img#pc { display: none;}
+img#tv { display: none;}
