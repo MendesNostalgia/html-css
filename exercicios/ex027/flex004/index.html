@@ -1,0 +1,74 @@
+<!-- 
+<img src="flex_eixos.png">
+
+ Flex-direction: row; - sentido da esquerda para direita;
+ Flex-direction: row-reverse; - sentido da direita para esquerda;
+ Flex-direction: column; - sentido de cima para baixo;
+ Flex-direction: column-reverse; - sentido de baixo para cima;
+ Flex-direction: initial; - padrão do navegador;
+ Flex-direction: inherit; - herda o valor da direção do pai;
+ Flex-direction: unset; - remove a direção flex do pai;
+ Flex-direction: flex-wrap; - o conteúdo cria um novo flex-container se necessário;
+ Flex-direction: no-wrap; - não cria um novo flex-container se necessário;
+ Flex-direction: space-between; - os elementos ocupam espaço igual entre eles, e o último elemento ocupa o espaço restante;
+ Flex-direction: space-around; - os elementos ocupam espaço igual entre eles, e todos os elementos ocupam o espaço restante;
+ Flex-direction: space-evenly; - os elementos ocupam espaço igual entre eles, e todos os elementos ocupam o espaço restante, com uma distância igual entre eles;
+
+ main-exis: Eixo principal;
+ main-start: Sentido principal do começo;
+ main-end: Sentido principal do fim;
+ main-size: Tamanho principal;
+ main-line-size: Tamanho da linha principal;
+ main-line-flex: Eixo principal flexível;
+ 
+ cross-axis: Eixo transversal;
+ cross-start: Sentido transversal do começo;
+ cross-end: Sentido transversal do fim;
+ cross-size: Tamanho transversal;
+ cross-line-size: Tamanho da linha transversal;
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner { /* Conteiner é o PAI e recebe flex-container leva configuração display: flex; */
+            background-color: rgb(9, 125, 21);
+            height: 10em;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        div.item {
+            background-color: rgb(0, 38, 255);            
+            border: 1px solid black;
+            text-align: center;
+            color: white;
+            text-transform: uppercase;
+            text-shadow: 5px 5px 5px black;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        div {
+            box-shadow: 10px 5px 5px black; 
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">Bloco A</div>
+        <div class="item">Bloco B</div>
+        <div class="item">Bloco C</div>
+        <div class="item">Bloco D</div>
+        <div class="item">Bloco E</div>
+        <div class="item">Bloco F</div>
+        <div class="item">Bloco G</div>
+    </div>
+</body>
+</html>
