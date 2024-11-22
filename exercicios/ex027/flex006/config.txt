@@ -1,0 +1,7 @@
+ gap: 20px; /* Espaçamento entre os elementos */
+            flex-direction: row-reverse; /* Sentido da direita para esquerda */
+            flex-wrap: wrap; /* O conteúdo cria um novo flex-container se necessário */
+            align-content: space-between; /* Os elementos ocupam espaço igual entre eles, e o último elemento ocupa o espaço restante */
+            justify-content: space-evenly; /* Os elementos ocupam espaço igual entre eles, e todos os elementos ocupam o espaço restante, com uma distância igual entre eles */
+            align-items: flex-start; /* Os elementos ocupam o espaço restante, começando do começo do contêiner */
+            align-self: flex-end; /* O elemento ocupa o espaço restante, começando do fim do contêiner */
