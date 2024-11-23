@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner { /* Conteiner é o PAI e recebe flex-container leva configuração display: flex; */
+            background-color: lightcoral;
+            display: flex;
+
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightblue;            
+            border: 1px solid black;
+            text-align: center;
+
+            flex-basis: 250px;
+            flex-shrink: 1;
+            flex-grow: 1;
+           
+        }
+
+        div#flex1 {
+            flex-shrink: 0;
+        }
+
+        div#flex2 {
+            flex-shrink: 1;
+        }
+
+        div#flex3 {
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="flex1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nulla blanditiis distinctio soluta nostrum consequuntur beatae reiciendis nisi laudantium, nihil quas totam provident laboriosam laborum ex eos nam labore earum?</div>
+        <div class="item" id="flex2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad repudiandae a, sit sunt nobis, impedit quisquam exercitationem magni minima corporis temporibus voluptate, omnis ullam provident ipsum atque illum quos rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sit odit libero enim nemo ducimus tempore earum itaque saepe! Quidem veritatis, odio ad officiis placeat blanditiis molestias voluptatum velit alias!</div>
+        <div class="item" id="flex3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt alias ab optio architecto ut quo! Culpa, est beatae fugiat, corrupti fugit a aliquid explicabo quo enim rem natus illum cum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit nobis atque cupiditate aut recusandae, illum dolorum cumque magnam possimus optio voluptatum rerum perferendis magni tenetur veritatis ut fugiat beatae. Repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit, quaerat sed velit ipsum culpa necessitatibus, error iure similique nesciunt illo unde debitis. Earum corrupti aperiam impedit facere, quasi mollitia?</div>
+    </div>
+</body>
+</html>
