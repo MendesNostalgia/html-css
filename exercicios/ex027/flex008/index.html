@@ -1,3 +1,5 @@
+<!-- Propriedade "flex-self" é usado nos elementos filho -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -10,6 +12,8 @@
 
             display: flex;
             flex-flow: row wrap;
+            align-items: flex-start;
+            height: 400px;
         }
 
         div.item { /* Configuração do intem "filho". Propriedade flex é aplicada ao item e não ao conteiner */
@@ -20,7 +24,8 @@
         }
 
         div#i1 {
-            
+
+            align-self: flex-start;            
         }
 
         div#i2 {
@@ -28,7 +33,7 @@
         }
 
         div#i3 {
-            
+            align-self: flex-end;            
         }
         
         div#i4 {
@@ -36,7 +41,7 @@
         }
         
         div#i5 {
-            
+            align-self: center;             
         }
         
         div#i6 {
@@ -44,7 +49,7 @@
         }
         
         div#i7 {
-            
+            align-self: stretch;             
         }        
         
     </style>
