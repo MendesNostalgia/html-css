@@ -16,25 +16,50 @@
             background-color: lightblue;            
             border: 1px solid black;
             text-align: center;
-            flex-basis: 200px;
+            
         }
 
         div#flex1 { /* Propriedade simplificada: flex=grow+shrink+basis */
-            flex-shrink: 1;
-            flex-grow: 1;
+            /* flex-shrink: 1;
+            flex-grow: 0;
+            flex-basis: 200px; */
+
+            flex: 1 0 200px;
 
         }
 
         div#flex2 {
-            flex-shrink: 1;
-            flex-grow: 4;
+            /* flex-shrink: 1;
+            flex-grow: 1;
+            flex-basis: 150px; */
+
+            flex: 1 1 150px;
 
         }
 
         div#flex3 {
-            flex-shrink: 1;
-            flex-grow: 0;
+            /*flex-shrink: 8;
+            flex-grow: 1;
+            flex-basis: auto; */
 
+            flex: 1 8 auto;
+
+        }
+
+        picture > img {
+            width: 50%;
+            height: auto;
+            display: block;
+            margin: 30px auto;
+            box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        picture > p {
+            color: blue;
+            text-shadow: 2px 2px 8px;
+            font-size: 2em;
+            margin-top: 10px;
+            text-align: center;
         }
     </style>
 </head>
@@ -44,5 +69,9 @@
         <div class="item" id="flex2">C</div>
         <div class="item" id="flex3">A</div>
     </div>
+    <picture>
+        <img src="super_simples.png">
+        <p>Propriedades super simplificafas para elemento filho.</p>
+    </picture>
 </body>
 </html>
