@@ -87,3 +87,9 @@ main > p {
     color: darkgray;
     margin-bottom: 20px;
 }
+
+picture > img {
+    max-width: 50%;
+    display: flex;
+    
+}
