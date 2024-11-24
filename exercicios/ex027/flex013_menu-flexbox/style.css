@@ -26,14 +26,18 @@ header {
 }
 
 header > h1 {
-    border: 2px dotted red;
-    background-color: lightgreen;
+    /*border: 2px dotted red;*/
+    color: black;
+    text-shadow: 2px 2px 40px red;
+    padding-left: 10px;
+    
+    text-transform: uppercase;
+
     flex: 0 0 200px;
 }
 
 header > nav {
-    border: 2px dotted red;
-    background-color: lightgray;
+    /*border: 2px dotted red;*/
     
     display: flex;
     flex-flow: row wrap;
@@ -41,6 +45,7 @@ header > nav {
 }
 
 header > nav > a {
+    
     background-color: royalblue;
     color: white;
     padding: 10px;
@@ -48,6 +53,7 @@ header > nav > a {
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
+    box-shadow: 1px 1px 5px red;
 }
 
 header > nav > a:hover {
@@ -64,3 +70,20 @@ main {
     box-shadow: 2px 2px 5px rgba(24, 239, 20, 0.648);
 }
 
+main > h2 {
+    color: darkgray;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+main > p {
+    text-indent: 5%;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: darkgray;
+    margin-bottom: 20px;
+}
